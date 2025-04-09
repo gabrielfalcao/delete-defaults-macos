@@ -19,8 +19,8 @@ jobs:
           - stable
           - 1.86.0
           - 1.85.1
-          # - 1.84.1
-          # - 1.83.0
+          - 1.84.1
+          - 1.83.0
 
     name: Check, Build and Run
     runs-on: macos-latest
