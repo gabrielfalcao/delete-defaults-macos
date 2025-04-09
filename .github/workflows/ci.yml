@@ -44,7 +44,7 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: run
-          args: -o deleted-domains.json
+          args: "-- -o deleted-domains.json"
 
       - name: upload artifacts
         uses: actions/upload-artifact@v4
