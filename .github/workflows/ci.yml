@@ -24,13 +24,13 @@ jobs:
 
     name: Check, Build and Run
     runs-on: macos-latest
-    continue-on-error: yes
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v3
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: ${{ matrix.toolchain }}
-          override: yes
+          override: true
       - name: check
         uses: actions-rs/cargo@v1
         with:
