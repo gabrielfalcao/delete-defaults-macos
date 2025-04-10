@@ -5,10 +5,6 @@ edition = "2021"
 autoexamples = false
 autobenches = false
 
-[package.metadata]
-cargo-args = ["-Zmtime-on-use", "-Zavoid-dev-deps", "-Zcustom_mir"]
-
-
 [lib]
 name = "delete_defaults_macos"
 path = "delete-defaults-macos/lib.rs"
